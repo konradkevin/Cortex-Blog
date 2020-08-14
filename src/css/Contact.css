@@ -1,0 +1,147 @@
+.contactform{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.object-contact{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.object-contact-mail{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.object-contact p{
+   font-size: 1em;
+}
+
+.object-contact img{
+    height: 100%;
+    width: auto;
+}
+
+
+
+
+@media (max-width: 940px) {
+
+    }
+
+
+
+    @import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  -webkit-transition: all 0.55s;
+  transition: all 0.55s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.instagram:before {
+  background-color: #C13584;
+}
+
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+
+.social-btns {
+  height: auto;
+  font-size: 0;
+  text-align: center;
+  position: relative;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 10px 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.8);
+  opacity: 0.99;
+}
+
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.social-btns .btn div{
+    position: relative;
+    top:0;
+    margin: 25% auto;
+    background-size: contain;
+    width: 40px; 
+    height: 40px; 
+    z-index: 50;
+    transition: 0.4s;
+    transform: scale(0.8);
+}
+.social-btns .btn:hover div{
+    transform: scale(1);
+}
+
+.facebook div{      background-image: url('../media/icons/facebookO.png');     }
+.facebook:hover div{        background-image: url('../media/icons/facebookB.png');     }
+
+.twitter div{      background-image: url('../media/icons/twitterO.png');     }
+.twitter:hover div{        background-image: url('../media/icons/twitterB.png');     }
+
+.instagram div{      background-image: url('../media/icons/instagramO.png');     }
+.instagram:hover div{        background-image: url('../media/icons/instagramB.png');     }
+
+/* .linkedin div{      background-image: url('linkedinO.png');     }
+.linkedin:hover div{        background-image: url('linkedinB.png');     } */
+
+
+.contactform h3{
+    background-color: var(--gradient_1stColor);
+    background-image: -webkit-linear-gradient(left,var(--gradient_1stColor),var(--gradient_2ndColor));
+    background-image: linear-gradient(to right,var(--gradient_1stColor),var(--gradient_2ndColor));
+
+border-radius: 6px;
+    text-align: center;
+padding: 10px;
+color: whitesmoke;
+}

@@ -1,0 +1,59 @@
+.aside-card{
+    width: 96%;
+    height: auto;
+    margin: 30px 4% 0 4%;
+background-color: white;
+}
+
+.aside-card h3{
+    background-color: var(--gradient_1stColor);
+    background-image: -webkit-linear-gradient(left,var(--gradient_1stColor),var(--gradient_2ndColor));
+    background-image: linear-gradient(to right,var(--gradient_1stColor),var(--gradient_2ndColor));
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+    text-align: center;
+padding: 10px;
+color: whitesmoke;
+}
+
+.aside-card img{
+    max-width: 80%;
+
+    max-height: 200px;
+background-color: white;
+object-fit: fill;
+}
+
+.img-aside{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aside-card div{
+    width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.aside-card p{
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.aside-card cite{
+    width: 90%;
+    text-align: center;
+    color: gray;
+}
+
+.aside-card a{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+ }
+
+.aside-card a:hover{
+   text-decoration-color: silver;
+}

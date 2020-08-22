@@ -1,112 +1,131 @@
-header{
-    width: 100%;
-height: 50vh;
-margin-bottom: 30px;
-display: flex;
-flex-direction: column-reverse;
+header {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-.video{
-    width: 100%;
-    height: 50vh;
-    position: absolute;
-    top: 0;
-    background-color: #3f51b5;
-    background-image: -webkit-linear-gradient(left,#3f51b5,#03a9f4);
-    background-image: linear-gradient(to right,#3f51b5,#03a9f4);
-    
+.video {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: #3f51b5;
+  background-image: -webkit-linear-gradient(left, #3f51b5, #03a9f4);
+  background-image: linear-gradient(to right, #3f51b5, #03a9f4);
 }
 
-.video video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter : blur(1.5px)
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(1.5px);
 }
 
-
-.video_layer{
-    width: 100%;
-    height: 50vh;
-    position: absolute;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.25);
-
+.video_layer {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.25);
 }
-
 
 .fixed-nav {
-    position: fixed;
-    box-shadow: 0 5px rgba(0,0,0,0.1);
-  }
-
-.nav-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar{
-    background-color: #3f51b5;
-    background-image: -webkit-linear-gradient(left,#3f51b5,#03a9f4);
-    background-image: linear-gradient(to right,#3f51b5,#03a9f4);
-padding: 0;
-justify-content: start;
-z-index: 5;
+.nav-container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 10;
 }
 
-.nav-divider{
-width: 1px;
-background-color: grey;
-height: 100%;
+.navbar {
+  background-color: #3f51b5;
+  background-image: -webkit-linear-gradient(left, #3f51b5, #03a9f4);
+  background-image: linear-gradient(to right, #3f51b5, #03a9f4);
+  padding: 0;
+  justify-content: start;
+  z-index: 5;
 }
 
-.link{
-    color: white;
-    padding: 25px 40px ;
-    transition: 0.5s;
-    font-size: 1.5em;
+.nav-divider {
+  width: 1px;
+  background-color: grey;
+  height: 100%;
+}
+
+.link {
+  color: white;
+  padding: 25px 40px;
+  transition: 0.5s;
+  font-size: 1.5em;
 }
 
 .link-img {
   color: white;
-  padding: 10px 40px ;
+  padding: 10px 40px;
   transition: 0.5s;
-
 }
 
-.link-img img{
-    width: 50px;
-    height: 100%;
+.link-img img {
+  width: 50px;
+  height: 100%;
 }
 
 .link:hover,
-.link-img:hover{
-    background-color: rgba(3, 169, 2440.3);
-    color: white;
-    text-decoration: none;
+.link-img:hover {
+  background-color: rgba(3, 169, 2440.3);
+  color: white;
+  text-decoration: none;
+}
+
+.header-logo {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  max-height: 30vh;
+}
+
+@media (max-width: 640px) {
+  .header-logo {
+    max-height: 15vh;
+    top: 20px;
+  }
+}
+
+.header-logo img {
+  object-fit: contain;
 }
 
 /* ///////////////////////////////// */
 
-
-
+@font-face {
+  font-family: "CantigaW01-Bold";
+  src: url("//db.onlinewebfonts.com/t/2b813575e3c0ec9beabc6df4ab1f25b9.woff2")
+    format("woff2");
+}
 
 header h1 {
-    position: relative;
-    color: #fff;
-    font: 900 4vw Montserrat;
-    text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    font-family: "Comfortaa", sans-serif;
-  }
-  
-  .concept {
-    padding: 5em;
-    height: 50;
-    overflow: hidden;
-    scroll-snap-align: center;
-  }
-  /* .concept:before {
+  position: relative;
+  color: #fff;
+  font: 900 8vw "";
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  font-family: "CantigaW01-Bold", sans-serif;
+}
+
+.concept {
+  height: 50;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+/* .concept:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -117,34 +136,32 @@ header h1 {
     opacity: 0;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   } */
-  .concept:hover:before {
-    opacity: 0.5;
-  }
-  
-
+.concept:hover:before {
+  opacity: 0.5;
+}
 
 .concept-two {
-    display: grid;
-    grid: 100%/repeat(12, 1fr);
-    padding: 5em 1em;
-  }
-  .concept-two .hover {
-    position: relative;
-    display: grid;
-    place-items: center;
-    padding: 10px;
-  }
-  .concept-two h1 {
-    color: transparent;
-    text-align: 0 1px 1px;
-    -webkit-text-stroke: 2px #fff;
-    text-shadow: none;
-    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  .concept-two .hover:hover h1 {
-    transform: scale(1.5);
-    color: #fff;
-    -webkit-text-stroke: 2px transparent;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    cursor: default;
-  }
+  display: grid;
+  grid: 100% / repeat(12, 1fr);
+  padding: 0 1em;
+}
+.concept-two .hover {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+.concept-two h1 {
+  color: transparent;
+  text-align: 0 1px 1px;
+  -webkit-text-stroke: 2px #fff;
+  text-shadow: none;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.concept-two .hover:hover h1 {
+  transform: scale(1.5);
+  color: #fff;
+  -webkit-text-stroke: 2px transparent;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: default;
+}

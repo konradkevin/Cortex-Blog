@@ -4,15 +4,41 @@ import { Link } from "react-router-dom";
 // Styles
 import "../css/Article.css";
 import { Image } from "react-bootstrap";
-
+import LangContext from "../contexts/LangContext";
 import authorIcon from "../media/icons/author.png";
 import tagIcon from "../media/icons/tag.png";
 import calendarIcon from "../media/icons/calendar.png";
 import arrowIcon from "../media/icons/arrow_right.png";
+import backend from "../firebase";
 // Styles
 // import { Button } from 'react-bootstrap';
 
 function Article(props) {
+  const { language, setLanguage } = React.useContext(LangContext);
+
+  // FONCTIONS LANGUES
+  const assignLang = () => {
+    switch (language) {
+      case "fr":
+        return {
+          article: props.datas.content
+        };
+        break;
+      case "en":
+        return {
+          article: "Biology"
+        };
+        break;
+      case "es":
+        return {
+          article: "Biología"
+        };
+        break;
+      default:
+        break;
+    }
+  };
+
   if (props.direction == "left") {
     return (
       <div class="blog-card">
@@ -28,7 +54,7 @@ function Article(props) {
             <li class="author">
               <img src={authorIcon} class="icon-details" alt="" />
               {props.datas.authors.map((elem, i) => {
-                return <a href="#">elem</a>;
+                return <a href="#">{elem}</a>;
               })}
             </li>
             <li class="date">
@@ -58,13 +84,8 @@ function Article(props) {
           </ul>
         </div>
         <div class="description">
-          <h2>Cerveau : mythes et fausses croyances</h2>
-          <p>
-            {" "}
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
-            dolorum architecto obcaecati enim dicta praesentium, quam nobis!
-            Neque ad aliquam facilis numquam. Veritatis, sit.
-          </p>
+          <h2>{props.datas.title}</h2>
+          <p>{assignLang().article}</p>
           <p class="read-more">
             <a href="#">
               Lire l'article

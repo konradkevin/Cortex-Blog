@@ -21,7 +21,7 @@ function Article(props) {
     switch (language) {
       case "fr":
         return {
-          article: props.datas.content
+          article: props.data.content
         };
         break;
       case "en":
@@ -46,33 +46,32 @@ function Article(props) {
           <div
             class="photo"
             style={{
-              backgroundImage:
-                "url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"
+              backgroundImage: "url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"
             }}
           ></div>
           <ul class="details">
             <li class="author">
               <img src={authorIcon} class="icon-details" alt="" />
-              {props.datas.authors.map((elem, i) => {
+              {props.data.authors.map((elem, i) => {
                 return <a href="#">{elem}</a>;
               })}
             </li>
             <li class="date">
               <img src={calendarIcon} class="icon-details" alt="" />
-              {props.datas.first_publish}
+              {props.data.first_publish}
             </li>
             <li class="tags">
               <ul>
                 <img src={tagIcon} class="icon-details" alt="" />
 
-                {props.datas.categories.map((elem, i) => {
+                {props.data.categories.map((elem, i) => {
                   return (
                     <li>
                       <a href="#">{elem}</a>
                     </li>
                   );
                 })}
-                {props.datas.tags.map((elem, i) => {
+                {props.data.tags.map((elem, i) => {
                   return (
                     <li>
                       <a href="#">elem</a>
@@ -84,7 +83,7 @@ function Article(props) {
           </ul>
         </div>
         <div class="description">
-          <h2>{props.datas.title}</h2>
+          <h2>{props.data.title}</h2>
           <p>{assignLang().article}</p>
           <p class="read-more">
             <a href="#">
@@ -103,8 +102,7 @@ function Article(props) {
             <div
               class="photo"
               style={{
-                backgroundImage:
-                  "url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"
+                backgroundImage: "url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"
               }}
             ></div>
             <ul class="details">
@@ -133,14 +131,10 @@ function Article(props) {
             </ul>
           </div>
           <div class="description">
-            <h2>
-              Les criquets pèlerins, un fort marqueur des conséquences de
-              l’activité humaine et du réchauffement climatique
-            </h2>
+            <h2>Les criquets pèlerins, un fort marqueur des conséquences de l’activité humaine et du réchauffement climatique</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
-              dolorum architecto obcaecati enim dicta praesentium, quam nobis!
-              Neque ad aliquam facilis numquam. Veritatis, sit.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque
+              ad aliquam facilis numquam. Veritatis, sit.
             </p>
             <p class="read-more">
               <a href="#">

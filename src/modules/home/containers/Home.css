@@ -1,0 +1,16 @@
+.card-title {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: var(--gradient_1stColor);
+    background-image: -webkit-linear-gradient(left, var(--gradient_1stColor), var(--gradient_2ndColor));
+    background-image: linear-gradient(to right, var(--gradient_1stColor), var(--gradient_2ndColor));
+    color: white;
+    text-align: center;
+}
+
+.article-container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+}

@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 .object-contact-mail{
     width: 100%;
@@ -112,8 +112,8 @@
     top:0;
     margin: 25% auto;
     background-size: contain;
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     z-index: 50;
     transition: 0.4s;
     transform: scale(0.8);
@@ -122,14 +122,14 @@
     transform: scale(1);
 }
 
-.facebook div{      background-image: url('../media/icons/facebookO.png');     }
-.facebook:hover div{        background-image: url('../media/icons/facebookB.png');     }
+.facebook div{      background-image: url('../../../media/icons/facebookO.png');     }
+.facebook:hover div{        background-image: url('../../../media/icons/facebookB.png');     }
 
-.twitter div{      background-image: url('../media/icons/twitterO.png');     }
-.twitter:hover div{        background-image: url('../media/icons/twitterB.png');     }
+.twitter div{      background-image: url('../../../media/icons/twitterO.png');     }
+.twitter:hover div{        background-image: url('../../../media/icons/twitterB.png');     }
 
-.instagram div{      background-image: url('../media/icons/instagramO.png');     }
-.instagram:hover div{        background-image: url('../media/icons/instagramB.png');     }
+.instagram div{      background-image: url('../../../media/icons/instagramO.png');     }
+.instagram:hover div{        background-image: url('../../../media/icons/instagramB.png');     }
 
 /* .linkedin div{      background-image: url('linkedinO.png');     }
 .linkedin:hover div{        background-image: url('linkedinB.png');     } */

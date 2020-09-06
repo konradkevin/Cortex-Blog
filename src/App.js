@@ -1,6 +1,7 @@
-// Foncionnalities
-import React, { useState, useEffect, useContext } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// Functionalities
+import React, {useState, useEffect, useContext} from "react";
+import {BrowserRouter as Router} from "react-router-dom";
+import {Switch, Route} from "react-router";
 
 // Styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,9 +15,9 @@ import "./App.css";
 // Contexts
 import LangContext from "./contexts/LangContext";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import {AboutContainer} from "./modules/about";
+import {ContactContainer} from "./modules/contact"
+import {HomeContainer} from "./modules/home"
 import Categories from "./components/Categories";
 import Header from "./components/Header";
 import Aside from "./components/Aside";
@@ -24,7 +25,7 @@ import Aside from "./components/Aside";
 function App() {
   // Language state
   const [language, setLanguage] = useState("fr");
-  const contextValue = { language, setLanguage };
+  const contextValue = {language, setLanguage};
   document.documentElement.lang = language;
 
   return (
@@ -34,17 +35,17 @@ function App() {
           <LangContext.Provider value={contextValue}>
             {/* <ChooseLanguage /> */}
 
-            <Header />
+            <Header/>
             <div id="container" className="row justify-content-center">
               <section
                 id="#view"
                 className="col-lg-8 col-sm-12 row justify-content-center "
               >
-                <Route path="/" exact component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
+                <Route path="/" exact component={HomeContainer}/>
+                <Route path="/about" component={AboutContainer}/>
+                <Route path="/contact" component={ContactContainer}/>
               </section>
-              <Aside />
+              <Aside/>
             </div>
 
             {/* <Footer /> */}

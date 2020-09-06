@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ULWnesXTp552wa26LOul",
+    "authors": [
+      "admin"
+    ],
+    "categories": [
+      "biology"
+    ],
+    "content": {
+      "fr": "Ceci est un article de test.",
+      "en": "This is just a test article",
+      "es": "Solo eso un testo articulo"
+    },
+    "title": {
+      "fr": "Article de test",
+      "en": "Test article",
+      "es": "Testo articulo"
+    },
+    "picture": "https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg",
+    "created": "31/08/2020",
+    "edits": [
+      "Initiated byBastoche, 31/08/2020 - 11:02:07",
+      "Published by Bastoche, 31/08/2020 - 11:03:04"
+    ],
+    "language": "fr",
+    "last_edit": "31/08/2020",
+    "primary_image": "",
+    "publied": true,
+    "tags": [
+      "tag1",
+      "tag2"
+    ]
+  },
+  {
+    "id": "ULWnesXTp552wa26LOul",
+    "authors": [
+      "admin"
+    ],
+    "categories": [
+      "biology"
+    ],
+    "content": {
+      "fr": "Ceci est un autre article de test.",
+      "en": "This is just another test article",
+      "es": "Solo eso un testo articulo"
+    },
+    "title": {
+      "fr": "Deuxième article de test",
+      "en": "Second test article",
+      "es": "Segundo test articulo"
+    },
+    "picture": "https://static.wixstatic.com/media/7fe4e3_e9631d35de724b12b75a50f50d0c76fd~mv2.jpg/v1/crop/x_0,y_60,w_395,h_275/fill/w_553,h_385,al_c,lg_1,q_80/Biology.webp",
+    "created": "31/08/2020",
+    "edits": [
+      "Initiated byBastoche, 31/08/2020 - 11:02:07",
+      "Published by Bastoche, 31/08/2020 - 11:03:04"
+    ],
+    "language": "fr",
+    "last_edit": "31/08/2020",
+    "primary_image": "",
+    "publied": true,
+    "tags": [
+      "tag3",
+      "tag4"
+    ]
+  }
+]

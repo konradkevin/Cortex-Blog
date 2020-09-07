@@ -1,8 +1,8 @@
 import {combineReducers, createStore, compose} from 'redux'
 import middlewaresEnhancer from './middlewares';
-import {AboutReducers} from '../modules/about'
-import {ArticlesReducers} from "../modules/articles";
-import {ContactReducers} from "../modules/contact";
+import {AboutReducers} from '../../about'
+import {ArticlesReducers} from "../../articles";
+import {ContactReducers} from "../../contact";
 
 const enhancers = compose(middlewaresEnhancer)
 

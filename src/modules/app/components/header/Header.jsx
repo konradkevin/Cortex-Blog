@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 // Styles
-import "../css/header.css";
-import "../css/border_animation.css";
+import "./Header.css";
+import "../../../../css/border_animation.css";
 import { Navbar } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Form, FormControl } from "react-bootstrap";
@@ -11,11 +11,11 @@ import { NavDropdown } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
 // Paths
-import path_video from "../media/video/dnavideo.mp4";
-import path_logo_home from "../media/icons/home.png";
-import logoWhite from "../media/icons/Logo Cortex blanc.png";
+import path_video from "../../../../media/video/dnavideo.mp4";
+import path_logo_home from "../../../../media/icons/home.png";
+import logoWhite from "../../../../media/icons/Logo Cortex blanc.png";
 // Contexts
-import LangContext from "../contexts/LangContext";
+import LangContext from "../../contexts/LangContext";
 
 function Header() {
   const { language, setLanguage } = useContext(LangContext);

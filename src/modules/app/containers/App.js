@@ -1,5 +1,5 @@
 // Functionalities
-import React, {useState, useEffect, useContext} from "react";
+import React, {useState} from "react";
 import {BrowserRouter as Router} from "react-router-dom";
 import {Switch, Route} from "react-router";
 
@@ -13,14 +13,15 @@ import "./App.css";
 // import ChooseLanguage from './Website/ChooseLanguage'
 
 // Contexts
-import LangContext from "./contexts/LangContext";
+import LangContext from "../contexts/LangContext";
 
-import {AboutContainer} from "./modules/about";
-import {ContactContainer} from "./modules/contact"
-import {HomeContainer} from "./modules/home"
-import Categories from "./components/Categories";
-import Header from "./components/Header";
-import Aside from "./components/Aside";
+import {AboutContainer} from "../../about";
+import {ContactContainer} from "../../contact"
+import {HomeContainer} from "../../home"
+import Categories from "../../../components/Categories";
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
+import Aside from "../../home/components/aside/Aside";
 
 function App() {
   // Language state
@@ -49,6 +50,7 @@ function App() {
             </div>
 
             {/* <Footer /> */}
+            <Footer/>
           </LangContext.Provider>
         </Switch>
       </Router>

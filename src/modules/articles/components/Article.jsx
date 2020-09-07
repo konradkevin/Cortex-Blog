@@ -2,7 +2,7 @@ import React from "react";
 
 // Styles
 import "./Article.css";
-import LangContext from "../../../contexts/LangContext";
+import LangContext from "../../app/contexts/LangContext";
 import authorIcon from "../../../media/icons/author.png";
 import tagIcon from "../../../media/icons/tag.png";
 import calendarIcon from "../../../media/icons/calendar.png";
